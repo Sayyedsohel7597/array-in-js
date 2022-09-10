@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj = {
+            firstName: "sohel",
+            lastName: "salim",
+            sirName: "sayyed",
+            age: 25,
+            color: "black",
+            residence: "india",
+            movies: ["raees", "DDLJ", "diwana", "pagal"],
+            salary: function() {
+                return 2000;
+            },
+            nanded: {
+                tahari: "nasheman",
+                biryani: "naka",
+            },
+            name: function() {
+                return this.firstName + " " + this.lastName;
+            },
+        };
+        // console.log(obj);
+        // console.log(obj.firstName);
+        // console.log(obj.movies[0]);
+        // console.log(obj.movies[1]);
+        // console.log(obj.movies[2]);
+        // console.log(obj.movies[3]);
+        console.log(obj.salary());
+        console.log(obj.name());
+        console.log(obj.nanded.tahari);
+    </script>
+</body>
+
+</html>
