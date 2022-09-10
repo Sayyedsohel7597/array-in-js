@@ -7,3 +7,6 @@ b = arr.toString();
 
 d = arr.fill("empire");  //it fill to all element as given---like--[ 'empire', 'empire', 'empire', 'empire', 'empire' ]
 console.log(d)
+console.log(d)
+console.log(d)
+console.log(d)
