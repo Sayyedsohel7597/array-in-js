@@ -10,6 +10,8 @@
 
 // console.log(india.reverse()); // it render in reverse format to existing array
 
+console.log("hello git");
+
 // var barakhadi = ["one", "two", "three", "four", "five", "six", "seven"]
 
 
