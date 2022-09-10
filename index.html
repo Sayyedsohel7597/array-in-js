@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array method</title>
+    <script src="./arraymethod.js"></script>
+</head>
+
+<body></body>
+<!-- <script src="./forloop.js"></script> -->
+
+<script>
+    var arr = [
+        "away",
+        "bway",
+        "cway",
+        "dway",
+        "eway",
+        "fway",
+        "gway",
+        "hway",
+        "iway",
+        "jway",
+    ];
+    //            0       1       2       3       4        5       6      7       8       9  <-------indices
+
+    // arr.splice(2, 0, "ina", "mina", "dika");   //yaha bina kisi purane arr ki values delete kiye new add karta
+    arr.splice(2, 1, "ina", "mina", "dika"); //yaha 2 index k bad ki ek arr ki 1 values delete karke new add karta
+    arr.splice(2, 2, "ina", "mina", "dika"); //yaha 2 index k bad ki ek arr ki 2 values delete karke new add karta
+    arr.splice(2, 3, "ina", "mina", "dika"); //yaha 2 index k bad ki ek arr ki 3 values delete karke new add karta
+    arr.splice(2, 4); // yaha 2index k bad k 2value del karta
+    console.log(arr);
+
+    (13)[
+        ("away",
+            "bway", //yaha se add huye ina,mina,dika aur uske agge cwaydway...
+            "ina",
+            "mina",
+            "dika",
+            "cway",
+            "dway",
+            "eway",
+            "fway",
+            "gway",
+            "hway",
+            "iway",
+            "jway")
+    ];
+</script>
+
+<script>
+    var company = [
+        "away",
+        "bway",
+        "cway",
+        "dway",
+        "eway",
+        "fway",
+        "gway",
+        "hway",
+    ];
+    undefined;
+    company.splice(2, 0, "tere", "naam");
+    // []length: 0[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+    console.log(company);
+    // VM721:1 (10) ['away', 'bway', 'tere', 'naam', 'cway', 'dway', 'eway', 'fway', 'gway', 'hway']
+    // undefined
+</script>
+
+</html>
